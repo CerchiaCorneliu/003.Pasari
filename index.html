@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Upload</title>
+<style type="text/css">
+  #title {
+    text-align: center;
+    padding: 25px;
+  }
+  #birdform {
+    text-align: center;
+  }
+  form{
+    width: 50%;
+    margin: 20px auto;
+   }
+  form div{
+    margin-top: 5px;
+  }
+</style>
+</head>
+<body>
+  <h1 id = "title">Birds in Romania</h1>
+  <form method="POST" action="pasari_salveaza.php" enctype="multipart/form-data">
+  	<input type="hidden" name="size" value="1000000">
+    <div id = "birdform">
+    	<div>
+    	  <input type="file" name="image">
+    	</div>
+    	<div>
+      <textarea 
+        	id="text" 
+        	cols="40" 
+        	rows="4" 
+        	name="image_text" 
+        	placeholder="Say something about this bird..."></textarea>
+    	</div>
+    	<div>
+  		<button type="submit" name="upload">SAVE</button>
+  	</div>
+  </div>
+  </form>
+</div>
+</body>
+</html>
